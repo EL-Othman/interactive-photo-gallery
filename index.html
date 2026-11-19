@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./gallery.js"></script>
+</head>
+<body>
+  <main class="gallery-app">
+    <header class="gallery-header">
+      <h1>Interactive Photo Gallery</h1>
+      <p>Move your cursor over a thumbnail to preview it, then leave to reset.</p>
+    </header>
+
+    <div id="image" class="preview-stage">Hover over an image below to display here.</div>
+
+    <section class="thumbnails" aria-label="Photo thumbnails">
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+        alt="Misty mountain valley at sunrise"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+      >
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+        alt="Tropical beach waves under a clear sky"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+      >
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80"
+        alt="City skyline glowing at dusk"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+      >
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+        alt="Sunlight filtering through a green forest"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+      >
+    </section>
+  </main>
+</body>
+</html>
